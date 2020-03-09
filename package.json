@@ -1,0 +1,27 @@
+{
+  "name": "githubz",
+  "version": "1.0.0",
+  "description": "Tiny GitHub Proxy",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "start:log": "npm start > server.log 2>&1 &",
+    "debug": "nodemon --inspect src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/StevenCollins/GitHubZ.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/StevenCollins/GitHubZ/issues"
+  },
+  "homepage": "https://github.com/StevenCollins/GitHubZ#readme",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.3",
+    "express": "^4.17.1",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.5"
+  }
+}
