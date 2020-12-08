@@ -23,6 +23,7 @@ var github = async (req, res, next) => {
 
         // do onthefly editing
         $('title').text(title.replace('GitHub', 'GitHubZ'));
+        $('head').prepend('<meta name="robots" content="noindex">');
         $('body').prepend(header);
         // remove any links to the login or join pages
         $('a[href^="/login"]').remove();
